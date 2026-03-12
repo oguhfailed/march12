@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Current Time</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Current Time</h1>
+
+    <div class="clock-card">
+      <div class="label">Local Time</div>
+      <div class="time" id="local-time">--:--:--</div>
+      <div class="date" id="local-date">----/--/--</div>
+    </div>
+
+    <div class="clock-card">
+      <div class="label">UTC Time</div>
+      <div class="time" id="utc-time">--:--:--</div>
+      <div class="date" id="utc-date">----/--/--</div>
+    </div>
+
+    <p class="note">Updates every second from the server</p>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>

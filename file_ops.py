@@ -33,8 +33,11 @@ def read_file_into_list(file_name):
     Returns:
         list: List where each item is a line from the file.
     """
-    ### WRITE SOLUTION HERE
-
+    lines = []
+    with open(file_name, 'r') as f:
+        for line in f:
+            lines.append(line)
+    return lines
 
 
 def write_first_line_to_file(file_contents, output_filename):

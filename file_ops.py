@@ -73,8 +73,12 @@ def read_even_numbered_lines(file_name):
     Returns:
         list: List of even-numbered lines in the file (2, 4, 6, etc.).
     """
-    ### WRITE SOLUTION HERE
-
+    even_lines = []
+    with open(file_name, 'r') as f:
+        for i, line in enumerate(f, start=1):
+            if i % 2 == 0:
+                even_lines.append(line)
+    return even_lines
 
 
 def read_file_in_reverse(file_name):

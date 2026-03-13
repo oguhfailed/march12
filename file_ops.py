@@ -54,8 +54,9 @@ def write_first_line_to_file(file_contents, output_filename):
         file_contents (str): String containing multiple lines of text.
         output_filename (str): Name of the file to write the first line into.
     """
-    ### WRITE SOLUTION HERE
-
+    first_line = file_contents.split('\n')[0]
+    with open(output_filename, 'w') as f:
+        f.write(first_line)
 
 
 def read_even_numbered_lines(file_name):
